@@ -1,0 +1,6 @@
+*.tmproj
+.DS_Store
+.svn
+*.yml
+db/*
+log/*
