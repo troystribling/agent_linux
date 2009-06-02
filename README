@@ -1,21 +1,8 @@
-Agent XMPP is an XMPP based linux device agent
-
-XMPP client framework built on EventMachine.
+Agent Linux is an XMPP based linux device agent
 
 ##################################################################################################
 to install and run
 
-	 sudo gem install eventmachine
-	 sudo gem install xmpp4r
-     sudo gem install do_sqlite3
-	 sudo gem install datamapper
-
-	cd vendor/eventmachine_xmlpushparser
-	rake gem
-	sudo gem install pkg/eventmachine_xmlpushparser-0.0.1.gem
-
-	cd ../../
-	bin/agent_xmpp.rb
 
 ##################################################################################################
 log file is by default placed in
