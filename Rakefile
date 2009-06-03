@@ -1,15 +1,13 @@
-$:.unshift 'lib'
 require 'rake'
 require 'rake/clean'
 require 'agent_xmpp'
+require 'lib/agent_linux'
 
-##############################################################################
-# DATABASE TASKS
-##############################################################################
+####------------------------------------------------------------------------------------------------------
 namespace :db do
   desc "create database tables"
   task :migrate do
-    require 'agent_linux'
+    require 'datamapper'
     require 'config/performance_monitors'
     AgentXmpp::Boot.load('app/models')
     DataMapper.setup(:default, "sqlite3://#{AgentXmpp::Boot.app_dir}/db/agent_linux.db")

@@ -1,0 +1,19 @@
+Agent Linux is an XMPP based linux device agent
+
+##################################################################################################
+to install and run
+
+
+##################################################################################################
+log file is by default placed in
+
+log/agent_xmpp_log
+
+##################################################################################################
+Place a file called agent.yml in config that has the following format
+
+jid: agent@somewhere.com
+password: password
+contacts:
+    - you@somewhere.com
+
